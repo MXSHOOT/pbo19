@@ -14,27 +14,27 @@ public class Maba {
         Maba mb = new Maba();
 
         //untuk mengambil input
-        var inputUser = new Scanner(System.in);
+        var input = new Scanner(System.in);
 
         //menyimpan variabel sekarang
         Calendar kalender = Calendar.getInstance();
         int tahunSekarang = kalender.get(Calendar.YEAR);
 
         System.out.println("Silahkan Masukkan Nama Lengkap : ");
-        String namaLengkap = inputUser.nextLine();
+        String namaLengkap = input.nextLine();
 
         System.out.println("Silahkan Masukan Alamat : ");
-        String alamat = inputUser.nextLine();
+        String alamat = input.nextLine();
 
         System.out.println("Silahkan Masukan Hobi : ");
-        String hobi = inputUser.nextLine();
+        String hobi = input.nextLine();
 
         System.out.println("Silahkan Masukan Tahun Lahir (4 digit) : ");
-        int tahunLahir = inputUser.nextInt();
+        int tahunLahir = input.nextInt();
         int umur = tahunSekarang - tahunLahir;
 
         System.out.println("Silahkan Masukkan Tinggi Badan (Angka) : ");
-        int tinggiBadan = inputUser.nextInt();
+        int tinggiBadan = input.nextInt();
 
 
         if (tinggiBadan >= 150)
