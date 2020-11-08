@@ -1,36 +1,21 @@
+import java.util.ArrayList;
 import java.util.Scanner;
+
 public class test {
     public static void main(String[] args) {
-        Scanner input=new Scanner(System.in);
+        var input = new Scanner(System.in);
+        ArrayList item = new ArrayList();
 
-        int pilihan, awal, akhir;
-    
-        System.out.println("PROGRAM MENAMPILKAN DERET BILANGAN HANJIL & GENAP");
-        System.out.println("-------------------------------------------------");
-        System.out.print("Masukan Pilihan [1. Ganjil] | [2. Genap] : ");
-        pilihan=input.nextInt();
-        System.out.print("Masukan Nilai Awal : ");
-        awal=input.nextInt();
-        System.out.print("Masukan Nilai Akhir : ");
-        akhir=input.nextInt();
-        System.out.println("--------------------------- ");
+        System.out.println("Masukkan nama nasabah : ");
+        String nasabah = input.nextLine();
 
-        switch (pilihan){
-            case 1 :  
-                    System.out.println("Deret Bilangan Ganjil");
-                    for(int i=awal;i<=akhir;i++){
-                        if (i%2!=0)
-                        System.out.print(i+" ");
-                    } 
-                    break;
-            case 2 :
-                    System.out.println("Deret Bilangan Genap");
-                    for(int i=awal;i<=akhir;i++){
-                        if (i%2==0)
-                        System.out.print(i+" ");
-                    }
-                    break;
-        }
-        System.out.println("");
+        System.out.println("Jumlah uang : ");
+        int jumlah = input.nextInt();
+
+        item.add(nasabah);
+        item.add(jumlah);
+
+        System.out.println("Senjata "+item.get(0)+
+                            "\nangaka "+item.get(1));
     }
 }
