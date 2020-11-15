@@ -24,3 +24,6 @@ public class Fungsi {
 
 
 }
+//pertambahan pengurangan, perkalian->kelompok aritmatika
+//sum,median ->kelompok statistika
+//aplikasi kalkulator mengambil dari kelompok keduanya yang disebut class dan objek
