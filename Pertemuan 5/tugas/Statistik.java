@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 public class Statistik {
+
     // fungsi mean
     public static double mean(int a[], int n)
     {
@@ -14,7 +15,7 @@ public class Statistik {
     // fungsi median
     public static double median(int a[], int n)
     {
-        // mengurutkan array
+        // sort diggunakan mengurutkan si array (titik untuk menghubungkan)
         Arrays.sort(a);
 
         // mengecek jika panjang array tidak sama dengan nol
