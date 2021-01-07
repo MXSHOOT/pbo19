@@ -1,0 +1,1 @@
+Dinamis pake overriding, contoh nya di interface 1
